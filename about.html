@@ -5,32 +5,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About Us – ApexAutomate</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .apex-blue {
+      color: #0074C1;
+    }
+    .text-apex-blue {
+      color: #0074C1;
+    }
+    .hover\:text-apex-blue:hover {
+      color: #0074C1;
+    }
+    .bg-apex-blue {
+      background-color: #0074C1;
+    }
+    .hover\:bg-apex-blue-hover:hover {
+      background-color: #005fa3;
+    }
+  </style>
 </head>
 <body class="bg-white text-gray-800 font-sans leading-relaxed">
 
   <!-- Header -->
-<header class="bg-white shadow p-6 w-full">
-  <div class="max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8">
-    <a href="index.html" class="flex items-center space-x-2">
-      <img src="logo.png" alt="ApexAutomate Logo" class="h-10">
-      <span class="text-xl font-semibold text-gray-800">ApexAutomate</span>
-    </a>
-    <nav class="space-x-6 text-sm font-medium">
-      <a href="index.html" class="text-gray-600 hover:text-blue-600">Home</a>
-      <a href="about.html" class="text-gray-600 hover:text-blue-600">About</a>
-      <a href="solution.html" class="text-gray-600 hover:text-blue-600">Solutions</a>
-      <a href="contact.html" class="text-gray-600 hover:text-blue-600">Contact</a>
-    </nav>
-  </div>
-</header>
-  
-  <header class="bg-gradient-to-r from-blue-50 to-white shadow-md p-6 text-center">
-     <a href="index.html">
-  <img src="logo.png" alt="ApexAutomate Logo" class="h-20 mx-auto mb-2 hover:opacity-80 transition" />
-</a>
-    <h1 class="text-3xl font-extrabold text-blue-700">About ApexAutomate</h1>
+  <header class="bg-white shadow w-full">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8">
+      <a href="index.html" class="flex items-center space-x-2">
+        <img src="logo.png" alt="ApexAutomate Logo" class="h-10">
+        <span class="text-xl font-semibold text-gray-800">ApexAutomate</span>
+      </a>
+      <nav class="space-x-6 text-sm font-medium">
+        <a href="index.html" class="text-gray-600 hover:text-apex-blue">Home</a>
+        <a href="about.html" class="text-gray-600 hover:text-apex-blue">About</a>
+        <a href="solution.html" class="text-gray-600 hover:text-apex-blue">Solutions</a>
+        <a href="contact.html" class="text-gray-600 hover:text-apex-blue">Contact</a>
+      </nav>
+    </div>
   </header>
+  
+  <!-- Banner -->
+  <section class="bg-gradient-to-r from-blue-100 to-white shadow-md p-6 text-center">
+    <a href="index.html">
+      <img src="logo.png" alt="ApexAutomate Logo" class="h-20 mx-auto mb-2 hover:opacity-80 transition" />
+    </a>
+    <h1 class="text-3xl font-extrabold text-apex-blue">About ApexAutomate</h1>
+  </section>
 
+  <!-- Main Content -->
   <main class="max-w-4xl mx-auto p-8 space-y-6">
     <section>
       <p class="text-gray-700">
@@ -62,20 +81,30 @@
       </p>
     </section>
   </main>
-<section id="founder" class="text-center mt-16">
-  <h2 class="text-2xl font-semibold text-blue-700 uppercase tracking-wide mb-4">Founder</h2>
 
-  <div class="flex flex-col items-center space-y-4">
-    <img src="your-image-file.png" alt="Shea Kelly – Founder" class="w-40 h-40 mt-4 rounded-full object-cover shadow-md" />
-    
-    <div class="max-w-xl">
-      <h3 class="text-xl font-bold text-gray-800">Shea Kelly</h3>
-      <p class="text-gray-600">
-        Shea is the founder of ApexAutomate and brings years of experience in people analytics, workforce planning, and automation strategy. He's passionate about building solutions that remove friction, enhance insight, and empower teams to act with confidence. His vision for ApexAutomate is simple: make workforce planning smarter, faster, and radically more useful.
-      </p>
+  <!-- Founder Section -->
+  <section id="founder" class="text-center mt-16">
+    <h2 class="text-2xl font-semibold text-apex-blue uppercase tracking-wide mb-4">Founder</h2>
+    <div class="flex flex-col items-center space-y-4">
+      <img src="your-image-file.png" alt="Shea Kelly – Founder" class="w-40 h-40 mt-4 rounded-full object-cover shadow-md" />
+      <div class="max-w-xl">
+        <h3 class="text-xl font-bold text-gray-800">Shea Kelly</h3>
+        <p class="text-gray-600">
+          Shea is the founder of ApexAutomate and brings years of experience in people analytics, workforce planning, and automation strategy. He's passionate about building solutions that remove friction, enhance insight, and empower teams to act with confidence. His vision for ApexAutomate is simple: make workforce planning smarter, faster, and radically more useful.
+        </p>
+      </div>
     </div>
-  </div>
-</section>
-  <footer class="text-center p-6 text-sm text-gray-500">
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center p-6 text-sm text-gray-500 mt-12">
+    <a href="index.html">
+      <img src="logo.png" alt="ApexAutomate Logo" class="h-16 mx-auto mb-3 hover:opacity-80 transition" />
+    </a>
     © 2025 ApexAutomate. All rights reserved.
-    <span class="mx-2">
+    <span class="mx-2">|</span>
+    <a href="solution.html" class="text-apex-blue hover:underline">Solutions</a>
+  </footer>
+
+</body>
+</html>
