@@ -18,43 +18,55 @@
     gtag('js', new Date());
     gtag('config', 'G-XXXXXXXXXX');
   </script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .fade-in {
+      animation: fadeIn 1s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans">
-  <header class="bg-white shadow p-6 text-center">
-    <img src="logo.png" alt="ApexAutomate Logo" class="h-60 mx-auto mb-4">
-    <h1 class="text-3xl font-bold">AI-Powered Workforce Planning</h1>
-    <p class="text-xl mt-2 text-gray-600">Smarter Workforce Planning Starts Here</p>
-    <a href="#get-started" class="mt-4 inline-block px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Get Started</a>
+<body class="bg-white text-gray-800 font-sans">
+  <header class="bg-gradient-to-r from-blue-50 to-white shadow-md p-8 text-center fade-in">
+    <img src="logo.png" alt="ApexAutomate Logo" class="h-24 mx-auto mb-4">
+    <h1 class="text-4xl font-extrabold text-blue-700">ApexAutomate</h1>
+    <p class="text-lg mt-2 text-gray-600">Smarter Workforce Planning Starts Here</p>
+    <a href="#get-started" class="mt-4 inline-block px-6 py-3 bg-blue-600 text-white text-sm font-medium rounded-full hover:bg-blue-700 transform hover:scale-105 transition">Get Started</a>
   </header>
 
-  <main class="max-w-4xl mx-auto p-6 space-y-10">
+  <main class="max-w-4xl mx-auto p-6 space-y-14 fade-in">
     <section>
-      <h2 class="text-2xl font-semibold mb-2">What We Do</h2>
-      <p class="mb-4">We help companies forecast, model, and align their workforce plans using AI — faster and smarter than traditional methods.</p>
-      <ul class="list-disc list-inside space-y-1">
+      <h2 class="text-2xl font-semibold text-blue-700 uppercase tracking-wide mb-2">What We Do</h2>
+      <p class="mb-4 text-gray-700">We help companies forecast, model, and align their workforce plans using AI — faster and smarter than traditional methods.</p>
+      <ul class="list-disc list-inside space-y-1 text-gray-700">
         <li>Predict future headcount needs</li>
         <li>Model attrition and hiring scenarios</li>
         <li>Align workforce and budget in real-time</li>
         <li>Visualize gaps by role, skill, and region</li>
         <li>Automate tedious spreadsheet planning</li>
       </ul>
-      <p class="mt-4 font-medium">Integrated with: Workday, Greenhouse, ADP, SAP, Excel-based systems</p>
+      <p class="mt-4 font-medium text-gray-800">Integrated with: Workday, Greenhouse, ADP, SAP, Excel-based systems</p>
     </section>
 
     <section>
-      <h2 class="text-2xl font-semibold mb-2">Why It Matters</h2>
-      <ul class="list-disc list-inside space-y-1">
+      <h2 class="text-2xl font-semibold text-blue-700 uppercase tracking-wide mb-2">Why It Matters</h2>
+      <ul class="list-disc list-inside space-y-1 text-gray-700">
         <li>Headcount forecasts are slow and inaccurate</li>
         <li>HR lacks easy access to modeling tools</li>
         <li>Scenario planning is manual and static</li>
         <li>Strategic alignment is delayed by silos</li>
       </ul>
-      <p class="mt-4">With ApexAutomate, you can plan months ahead with confidence — and simulate outcomes before committing to costly hiring decisions.</p>
+      <p class="mt-4 text-gray-700">With ApexAutomate, you can plan months ahead with confidence — and simulate outcomes before committing to costly hiring decisions.</p>
     </section>
 
     <section>
-      <h2 class="text-2xl font-semibold mb-2">Plug & Play Integrations</h2>
-      <ul class="list-disc list-inside space-y-1">
+      <h2 class="text-2xl font-semibold text-blue-700 uppercase tracking-wide mb-2">Plug & Play Integrations</h2>
+      <ul class="list-disc list-inside space-y-1 text-gray-700">
         <li>Workday (HCM, Adaptive Planning)</li>
         <li>Greenhouse (Recruiting)</li>
         <li>ADP, SAP, SuccessFactors</li>
@@ -64,9 +76,9 @@
     </section>
 
     <section>
-      <h2 class="text-2xl font-semibold mb-2">Data Use & Privacy</h2>
-      <p class="mb-2">Built for enterprise-grade security and trust:</p>
-      <ul class="list-disc list-inside space-y-1">
+      <h2 class="text-2xl font-semibold text-blue-700 uppercase tracking-wide mb-2">Data Use & Privacy</h2>
+      <p class="mb-2 text-gray-700">Built for enterprise-grade security and trust:</p>
+      <ul class="list-disc list-inside space-y-1 text-gray-700">
         <li>No PII required</li>
         <li>Data never used for model training</li>
         <li>Private LLMs (OpenAI / Azure)</li>
@@ -74,13 +86,13 @@
         <li>Client-controlled uploads and retention</li>
         <li>Redaction & anonymization available</li>
       </ul>
-      <p class="mt-2">On-prem and private cloud deployments available.</p>
+      <p class="mt-2 text-gray-700">On-prem and private cloud deployments available.</p>
     </section>
 
     <section id="get-started">
-      <h2 class="text-2xl font-semibold mb-2">Get Started</h2>
-      <p class="mb-2">Start with a 4-week pilot that includes:</p>
-      <ul class="list-disc list-inside space-y-1">
+      <h2 class="text-2xl font-semibold text-blue-700 uppercase tracking-wide mb-2">Get Started</h2>
+      <p class="mb-2 text-gray-700">Start with a 4-week pilot that includes:</p>
+      <ul class="list-disc list-inside space-y-1 text-gray-700">
         <li>Current-state analysis</li>
         <li>Forecasting & attrition modeling</li>
         <li>AI-powered scenario planning</li>
@@ -89,17 +101,17 @@
     </section>
 
     <section id="contact">
-      <h2 class="text-2xl font-semibold mb-2">Contact Us</h2>
+      <h2 class="text-2xl font-semibold text-blue-700 uppercase tracking-wide mb-2">Contact Us</h2>
       <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="space-y-4 max-w-md">
         <input type="text" name="name" placeholder="Your Name" required class="w-full px-4 py-2 border rounded">
         <input type="email" name="email" placeholder="Your Email" required class="w-full px-4 py-2 border rounded">
         <textarea name="message" placeholder="Your Message" rows="5" required class="w-full px-4 py-2 border rounded"></textarea>
-        <button type="submit" class="px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Send Message</button>
+        <button type="submit" class="px-6 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transform hover:scale-105 transition">Send Message</button>
       </form>
     </section>
   </main>
 
-  <footer class="text-center p-4 text-sm text-gray-500">
+  <footer class="text-center p-6 text-sm text-gray-500">
     © 2025 ApexAutomate. All rights reserved.
   </footer>
 </body>
